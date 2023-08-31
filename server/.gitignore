@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-C:\Users\ashle\Documents\UCF\projects\Mood Journal Proj\Serene-Scribbles\server\node_modules
+
 /node_modules
 /.pnp
 .pnp.js
