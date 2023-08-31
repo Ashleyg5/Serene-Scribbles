@@ -23,30 +23,30 @@ type Mood {
     _id: ID
     sticker: String
     feeling: String
-    scale: Number
+    scale: Int
     why: String
-    date: Date
+    date: String
 }
 
 type moodInput {
     _id: ID
     sticker: String
     feeling: String
-    scale: Number
+    scale: Int
     why: String
-    date: Date
+    date: String
 }
 
 type Entry {
     _id: ID
     description: String
-    date: Date
+    date: String
 }
 
 type entryInput {
     _id: ID
     description: String
-    date: Date
+    date: String
 }
 
 type Auth {
@@ -70,9 +70,9 @@ type Mutation {
     login(username: String!, password: String!): Auth
     addUser(name: String!, email: String!, username: String!, password: String!): Auth
     updateUser(name: String, username: String): User
-    addMood(sticker: String!, feeling: String!, scale: Number!, why: String!, date: Date!): Mood
+    addMood(sticker: String!, feeling: String!, scale: Int!, why: String!, date: String!): Mood
     removeMood(moodId: ID!): User
-    addEntry(description: String!, date: Date!): Entry
+    addEntry(description: String!, date: String!): Entry
     removeEntry(entryId: ID!): User
     
 }
